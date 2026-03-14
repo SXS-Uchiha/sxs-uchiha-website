@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SXS UCHIHA | SocialHub - Creator | Anime edits</title>
+    <meta
+      name="description"
+      content="Official SocialHub profile for SXS UCHIHA, creator of anime edits. Connect on Instagram, YouTube, TikTok, Facebook, Snapchat, Threads, or by email."
+    />
+    <meta name="theme-color" content="#06070b" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#a855f7",
+              accent: "#22d3ee",
+              "background-dark": "#06070b",
+            },
+            fontFamily: {
+              display: ["Plus Jakarta Sans", "sans-serif"],
+            },
+            boxShadow: {
+              soft: "0 10px 25px -12px rgb(15 23 42 / 0.2)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      /* Small reusable styles to keep repetitive utility classes minimal. */
+      .surface-card {
+        background: linear-gradient(145deg, rgb(12 13 20 / 0.9), rgb(10 11 18 / 0.86));
+        border: 1px solid rgb(168 85 247 / 0.26);
+        box-shadow: 0 10px 30px -18px rgb(34 211 238 / 0.45), 0 8px 26px -18px rgb(168 85 247 / 0.5);
+        backdrop-filter: blur(8px);
+      }
+
+      .social-link {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.375rem;
+        padding-right: 1rem;
+        width: 100%;
+        border-radius: 9999px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      }
+
+      .social-link:hover {
+        transform: translateY(-2px);
+        border-color: rgb(34 211 238 / 0.6);
+        box-shadow: 0 0 0 1px rgb(34 211 238 / 0.35), 0 14px 32px -18px rgb(168 85 247 / 0.65);
+      }
+
+      .gallery-card {
+        aspect-ratio: 1 / 1;
+        border-radius: 0.75rem;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        border: 1px solid rgb(168 85 247 / 0.25);
+        background: rgb(12 13 20 / 0.82);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      }
+
+      .gallery-card:hover {
+        transform: translateY(-4px) scale(1.01);
+        border-color: rgb(34 211 238 / 0.55);
+        box-shadow: 0 0 0 1px rgb(34 211 238 / 0.32), 0 12px 30px -16px rgb(34 211 238 / 0.5), 0 12px 30px -16px rgb(168 85 247 / 0.55);
+      }
+
+      .neon-icon {
+        background: linear-gradient(145deg, rgb(168 85 247), rgb(34 211 238));
+        box-shadow: 0 6px 18px -10px rgb(168 85 247 / 0.9), 0 6px 18px -10px rgb(34 211 238 / 0.9);
+      }
+
+      @media (min-width: 640px) {
+        .social-link {
+          gap: 1rem;
+          padding: 0.5rem;
+          padding-right: 1.25rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-[#06070b] text-slate-100 font-display min-h-screen selection:bg-accent/30"
+  >
+    <!-- Main wrapper keeps content centered and responsive across all device sizes. -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-9 lg:py-12 relative">
+      <div class="pointer-events-none absolute -top-16 left-1/2 -translate-x-1/2 h-52 w-52 bg-primary/25 blur-3xl rounded-full"></div>
+      <div class="pointer-events-none absolute top-28 right-0 h-44 w-44 bg-accent/20 blur-3xl rounded-full"></div>
+      <header class="w-full flex flex-col items-center mb-8 sm:mb-10">
+        <!-- Theme switcher (saved in localStorage and applied on page load). -->
+        <div class="w-full flex justify-end mb-5 sm:mb-7">
+          <button
+            id="theme-toggle"
+            class="surface-card inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold hover:-translate-y-0.5 transition"
+            type="button"
+            aria-label="Toggle dark mode"
+          >
+            <span id="theme-icon" class="material-symbols-outlined text-base">dark_mode</span>
+            <span id="theme-label">Dark mode</span>
+          </button>
+        </div>
+
+        <div class="relative group">
+          <div
+            class="absolute -inset-1 bg-gradient-to-r from-primary to-purple-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-700"
+          ></div>
+          <div
+            class="relative bg-center bg-no-repeat aspect-square bg-cover rounded-full h-28 w-28 sm:h-32 sm:w-32 border-4 border-slate-900 shadow-xl shadow-primary/30"
+            role="img"
+            aria-label="Professional portrait of SXS UCHIHA smiling"
+            style='background-image: url("/IMG_20251122_232356.jpg");'
+          ></div>
+        </div>
+
+        <div class="mt-5 sm:mt-6 text-center">
+          <h1 class="text-2xl sm:text-3xl font-bold tracking-tight mb-1">SXS UCHIHA</h1>
+          <p class="text-primary font-medium mb-2">@sxsuchiha</p>
+          <p class="text-slate-300 max-w-md mx-auto leading-relaxed text-sm sm:text-base">
+            Creator | Anime edits.
+          </p>
+        </div>
+      </header>
+
+      <main>
+        <!-- Social links -->
+        <section class="w-full space-y-3 sm:space-y-4 mb-6 sm:mb-8" aria-label="Social links">
+          <a class="social-link group" href="https://www.instagram.com/sxs_uchiha?igsh=MWR0N2phbDMwZ3N4aA==" target="_blank" rel="noopener noreferrer" aria-label="Open Instagram profile">
+            <div
+              class="h-11 w-11 sm:h-12 sm:w-12 rounded-full neon-icon flex items-center justify-center text-white shrink-0"
+            >
+              <span class="material-symbols-outlined">photo_camera</span>
+            </div>
+            <span class="flex-1 font-semibold">Instagram</span>
+            <span class="material-symbols-outlined text-cyan-300/80 group-hover:text-cyan-300 group-hover:translate-x-1 transition-transform"
+              >chevron_right</span
+            >
+          </a>
+
+          <a class="social-link group" href="https://youtube.com/@sxs_uchiha?si=w_L5m5FduoIJALLK" target="_blank" rel="noopener noreferrer" aria-label="Open YouTube channel">
+            <div class="h-11 w-11 sm:h-12 sm:w-12 rounded-full neon-icon flex items-center justify-center text-white shrink-0">
+              <span class="material-symbols-outlined">play_circle</span>
+            </div>
+            <span class="flex-1 font-semibold">YouTube</span>
+            <span class="material-symbols-outlined text-cyan-300/80 group-hover:text-cyan-300 group-hover:translate-x-1 transition-transform"
+              >chevron_right</span
+            >
+          </a>
+
+          <a class="social-link group" href="https://www.tiktok.com/@sxsuchiha" target="_blank" rel="noopener noreferrer" aria-label="Open TikTok profile">
+            <div class="h-11 w-11 sm:h-12 sm:w-12 rounded-full neon-icon flex items-center justify-center text-white shrink-0">
+              <span class="material-symbols-outlined">music_note</span>
+            </div>
+            <span class="flex-1 font-semibold">TikTok</span>
+            <span class="material-symbols-outlined text-cyan-300/80 group-hover:text-cyan-300 group-hover:translate-x-1 transition-transform"
+              >chevron_right</span
+            >
+          </a>
+
+          <a class="social-link group" href="https://fb.oia.bio/sxs-uchiha" target="_blank" rel="noopener noreferrer" aria-label="Open Facebook profile">
+            <div class="h-11 w-11 sm:h-12 sm:w-12 rounded-full neon-icon flex items-center justify-center text-white shrink-0">
+              <span class="material-symbols-outlined">public</span>
+            </div>
+            <span class="flex-1 font-semibold">Facebook</span>
+            <span class="material-symbols-outlined text-cyan-300/80 group-hover:text-cyan-300 group-hover:translate-x-1 transition-transform"
+              >chevron_right</span
+            >
+          </a>
+
+          <a class="social-link group" href="https://snap.oia.bio/ssxkxlw" target="_blank" rel="noopener noreferrer" aria-label="Open Snapchat profile">
+            <div class="h-11 w-11 sm:h-12 sm:w-12 rounded-full neon-icon flex items-center justify-center text-white shrink-0">
+              <span class="material-symbols-outlined">chat</span>
+            </div>
+            <span class="flex-1 font-semibold">Snapchat</span>
+            <span class="material-symbols-outlined text-cyan-300/80 group-hover:text-cyan-300 group-hover:translate-x-1 transition-transform"
+              >chevron_right</span
+            >
+          </a>
+
+          <a class="social-link group" href="https://www.threads.com/@sxs_uchiha" target="_blank" rel="noopener noreferrer" aria-label="Open Threads profile">
+            <div class="h-11 w-11 sm:h-12 sm:w-12 rounded-full neon-icon flex items-center justify-center text-white shrink-0">
+              <span class="material-symbols-outlined">forum</span>
+            </div>
+            <span class="flex-1 font-semibold">Threads</span>
+            <span class="material-symbols-outlined text-cyan-300/80 group-hover:text-cyan-300 group-hover:translate-x-1 transition-transform"
+              >chevron_right</span
+            >
+          </a>
+
+          <a class="social-link group" href="mailto:xuchihaedits3@gmail.com" aria-label="Send email to SXS UCHIHA">
+            <div class="h-11 w-11 sm:h-12 sm:w-12 rounded-full neon-icon flex items-center justify-center text-white shrink-0">
+              <span class="material-symbols-outlined">mail</span>
+            </div>
+            <span class="flex-1 font-semibold">Email</span>
+            <span class="material-symbols-outlined text-cyan-300/80 group-hover:text-cyan-300 group-hover:translate-x-1 transition-transform"
+              >chevron_right</span
+            >
+          </a>
+        </section>
+
+      </main>
+
+
+
+      <footer class="w-full flex flex-col items-center gap-5 sm:gap-6 pt-6 border-t border-primary/30">
+        <button
+          class="bg-gradient-to-r from-primary to-accent hover:from-purple-500 hover:to-cyan-400 text-slate-950 px-7 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold shadow-lg shadow-primary/30 transition-all duration-300 hover:-translate-y-0.5"
+          type="button"
+        >
+          <span class="material-symbols-outlined align-middle mr-1">mail</span>
+          Get in Touch
+        </button>
+
+        <p class="text-xs text-slate-400 text-center">© 2024 SXS UCHIHA</p>
+      </footer>
+    </div>
+
+    <script>
+      // Theme setup: defaults to dark mode for brand consistency, then uses saved preference.
+      const root = document.documentElement;
+      const themeToggle = document.getElementById("theme-toggle");
+      const themeLabel = document.getElementById("theme-label");
+      const themeIcon = document.getElementById("theme-icon");
+
+
+      function applyTheme(theme) {
+        const darkEnabled = theme === "dark";
+        root.classList.toggle("dark", darkEnabled);
+        themeLabel.textContent = darkEnabled ? "Light mode" : "Dark mode";
+        themeIcon.textContent = darkEnabled ? "light_mode" : "dark_mode";
+      }
+
+      const savedTheme = localStorage.getItem("theme");
+      applyTheme(savedTheme || "dark");
+
+      themeToggle.addEventListener("click", () => {
+        const nextTheme = root.classList.contains("dark") ? "light" : "dark";
+        localStorage.setItem("theme", nextTheme);
+        applyTheme(nextTheme);
+      });
+    </script>
+  </body>
+</html>
